@@ -11,10 +11,13 @@
 - [x] Java Collections
 - [x] SOLID Principles
 ---
+### Clone the project
+`
+git clone https://github.com/b-gogeishvili/CompanyManager.git
+`
+
 #### Compile the project using terminal on Unix-like systems
 ```
-git clone https://github.com/b-gogeishvili/CompanyManager.git
-
 cd ./CompanyManager/src
 
 find . -name "*.java" -print | xargs javac -d ../bin
