@@ -20,6 +20,6 @@ cd ./CompanyManager/src
 
 find . -name "*.java" -print | xargs javac -d ../out
 
-java Main
+java ./out/Main
 ``` 
 ##### Or open it via IntelliJ or other Java IDE
