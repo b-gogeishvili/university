@@ -18,5 +18,7 @@ git clone https://github.com/b-gogeishvili/CompanyManager.git
 cd ./CompanyManager/src
 
 find . -name "*.java" -print | xargs javac -d ../bin
+
+java Main
 ``` 
 ##### Or open it via IntelliJ or other Java IDE
