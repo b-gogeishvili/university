@@ -18,7 +18,7 @@
 ```
 cd ./CompanyManager/src
 
-find . -name "*.java" -print | xargs javac -d ../bin
+find . -name "*.java" -print | xargs javac -d ../out
 
 java Main
 ``` 
