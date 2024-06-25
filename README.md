@@ -1,4 +1,4 @@
-# ==Company Manager==
+# Company Manager
 > OOP class Project written in Java
 ---
 
