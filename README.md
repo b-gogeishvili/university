@@ -12,7 +12,7 @@
 - [x] SOLID Principles
 ---
 ### Clone the project
-`git clone https://github.com/b-gogeishvili/CompanyManager.git`
+```git clone https://github.com/b-gogeishvili/CompanyManager.git```
 
 #### Compile the project using terminal on Unix-like systems
 ```
