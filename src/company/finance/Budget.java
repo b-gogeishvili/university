@@ -1,4 +1,6 @@
 package company.finance;
 
-public class Budget {
+import company.interfaces.*;
+
+public class Budget implements CashInterface {
 }
