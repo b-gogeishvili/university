@@ -5,8 +5,8 @@
 ### Utilizing several Java Features and OOP Principles
 - [x] Classes
 - [x] Interfaces
-- [x] Generics
 - [x] OOP Principles
+- [x] Generics
 - [x] Error Handling
 - [x] Java Collections
 - [x] SOLID Principles
