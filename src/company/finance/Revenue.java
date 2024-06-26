@@ -8,7 +8,7 @@ public class Revenue {
 
     public Revenue(Company company) {
         for (Service service : company.getCompanyServices()) {
-            this.totalRevenue += service.getIncome().getCash();
+            this.totalRevenue += service.getIncome().getMonthlyAmount();
         }
         company.setRevenue(this);
     }

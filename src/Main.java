@@ -39,7 +39,8 @@ public class Main {
                 position,
                 department,
                 team,
-                manager
+                manager,
+                company
         );
 
     }

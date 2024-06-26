@@ -1,5 +1,6 @@
 package company.people;
 
+import company.Company;
 import company.department.Department;
 import company.department.Position;
 import company.department.Team;
@@ -13,18 +14,21 @@ public class Employee extends Person {
     private final Department department;
     private final Team team;
     private final Manager manager;
+    private final Company company;
 
     // Collections
-    private final ArrayList<Report<Employee>> workLog = new ArrayList<>();
+    private final ArrayList<Activity<Employee>> workLog = new ArrayList<>();
     private final ArrayList<Project> projectsAssigned = new ArrayList<>();
     private final ArrayList<Task> toDoList = new ArrayList<>();
 
-    public Employee(String name, int age, Position position, Department department, Team team, Manager manager) {
+    public Employee(String name, int age, Position position, Department department, Team team, Manager manager, Company company) {
         super(name, age);
         this.position = position;
         this.department = department;
         this.team = team;
         this.manager = manager;
+        this.company = company;
+        company.addEmployee(this);
     }
 
     @Override
@@ -43,7 +47,7 @@ public class Employee extends Person {
     }
 
     @Override
-    public void report() {
+    protected void report() {
         // new Report(message, issuer, destination...);
     }
 

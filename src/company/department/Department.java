@@ -23,6 +23,7 @@ public class Department implements DepartmentInterface {
         this.departmentDescription = departmentDescription;
         this.director = director;
         this.company = company;
+        company.addDepartment(this);
     }
 
     public void displayDepartmentInfo() {

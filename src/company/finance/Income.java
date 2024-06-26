@@ -1,13 +1,19 @@
 package company.finance;
 
 public class Income {
-    int cash;
+    private final int monthlyAmount;
+    private final int yearlyAmount;
 
-    public Income(int cash) {
-        this.cash = cash;
+    public Income(int monthlyAmount) {
+        this.monthlyAmount = monthlyAmount;
+        this.yearlyAmount = monthlyAmount * 12;
     }
 
-    public int getCash() {
-        return cash;
+    public int getMonthlyAmount() {
+        return this.monthlyAmount;
+    }
+
+    public int getYearlyAmount() {
+        return this.yearlyAmount;
     }
 }

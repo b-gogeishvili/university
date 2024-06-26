@@ -42,6 +42,6 @@ public abstract class Person {
 
     public abstract void raiseIncome();
 
-    public abstract void report();
+    protected abstract void report();
     public abstract void createReport();
 }

@@ -1,11 +1,13 @@
 package company.util;
 
-public class Report<T> {
+public class Report<T, B> {
     private final String message;
-    private final T data;
+    private final T reportedTo;
+    private final B reportedBy;
 
-    public Report(String message, T data) {
+    public Report(String message, T reportedTo, B reportedBy) {
         this.message = message;
-        this.data = data;
+        this.reportedTo = reportedTo;
+        this.reportedBy = reportedBy;
     }
 }
