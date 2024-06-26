@@ -4,8 +4,10 @@ import company.people.*;
 import company.department.*;
 import company.service.*;
 import company.finance.*;
+import company.util.*;
 
 import java.util.ArrayList;
+import java.util.concurrent.BlockingDeque;
 
 public class Company {
     // Basic Information
@@ -15,12 +17,14 @@ public class Company {
     private final Director founder;
 
     // Collections !!! Should be added upon creation
-    private final ArrayList<Employee> employees = new ArrayList<>();;
-    private final ArrayList<Department> departments = new ArrayList<>();;
-    private final ArrayList<Service> services = new ArrayList<>();;
+    private final ArrayList<Employee> employees = new ArrayList<>();
+    private final ArrayList<Department> departments = new ArrayList<>();
+    private final ArrayList<Service> services = new ArrayList<>();
+    private final ArrayList<Resource> resources = new ArrayList<>();
 
     // Financial Information
     private Revenue revenue;
+    private Budget budget;
 
 
     // Company
@@ -60,6 +64,10 @@ public class Company {
         this.employees.addAll(employee);
     }
 
+    public ArrayList<Employee> getCompanyEmployees() {
+        return this.employees;
+    }
+
 
     // Department
 
@@ -86,6 +94,10 @@ public class Company {
         }
     }
 
+    public ArrayList<Service> getCompanyServices() {
+        return this.services;
+    }
+
 
     // Revenue
 
@@ -95,5 +107,38 @@ public class Company {
 
     public void displayCompanyRevenue() {
         System.out.println("Display Company revenue: " + this.revenue);
+    }
+
+    public void setBudget(Budget budget) {
+        this.budget = budget;
+    }
+
+    public Budget getCompanyBudget() {
+        return this.budget;
+    }
+
+    public void displayCompanyBudget() {
+        System.out.println("Display Company budget: " + this.budget);
+    }
+
+
+    // Resource
+
+    public void addResource(Resource resource) {
+        this.resources.add(resource);
+    }
+
+    public void addResource(ArrayList<Resource> resource) {
+        this.resources.addAll(resource);
+    }
+
+    public ArrayList<Resource> getCompanyResources() {
+        return this.resources;
+    }
+
+    public void displayCompanyResources() {
+        for (Resource resource : resources) {
+            System.out.println(resource);
+        }
     }
 }

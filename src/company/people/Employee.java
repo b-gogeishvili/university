@@ -1,6 +1,7 @@
 package company.people;
 
 import company.department.Department;
+import company.department.Position;
 import company.department.Team;
 import company.project.*;
 import company.util.*;
@@ -8,6 +9,7 @@ import company.util.*;
 import java.util.ArrayList;
 
 public class Employee extends Person {
+    private final Position position;
     private final Department department;
     private final Team team;
     private final Manager manager;
@@ -17,8 +19,9 @@ public class Employee extends Person {
     private final ArrayList<Project> projectsAssigned = new ArrayList<>();
     private final ArrayList<Task> toDoList = new ArrayList<>();
 
-    public Employee(String name, int age, Department department, Team team, Manager manager) {
+    public Employee(String name, int age, Position position, Department department, Team team, Manager manager) {
         super(name, age);
+        this.position = position;
         this.department = department;
         this.team = team;
         this.manager = manager;

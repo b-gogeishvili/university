@@ -1,4 +1,7 @@
 package company.exceptions;
 
-public class DeadlineExceeded {
+public class DeadlineExceeded extends Exception {
+    public DeadlineExceeded() {
+        super("Deadline exceeded");
+    }
 }
