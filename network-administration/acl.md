@@ -114,9 +114,11 @@ ip access-list 100 permit ip
 # How to apply ACL
 
 ACL-ის შექმნის შემდეგ ის უნდა დავაყენოთ ან შემომავალ (inbound) ან გამავალ (outbound) პაკეტებზე.
+გასათვალისწინებელია, რომ access-list ყენდება ინტერფეისზე.
 
 ```
 - conf t
+- interface {some_interface}
 - ip access-group {acl_num_or_name}
 - exit
 ```
