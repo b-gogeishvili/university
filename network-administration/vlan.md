@@ -49,6 +49,7 @@ VLAN-ების გაყოფა ხდება Layer 2-ზე (OSI Model-�
 ```
 - conf t
 - vtp mode client
+- vtp domain {domain}
 - vtp password {password}
 
 - interface range fastEthernet {range}

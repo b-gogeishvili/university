@@ -26,3 +26,11 @@ So, network has 25 bits and host has 7 bits. Therefore, we have two subnets:
 - x.x.x.128 - x.x.x.255 
 
 **Subnet Range** is 256 - host portion (in decimal)
+
+### Wildcard Mask
+
+A wildcard mask is the inverse of a subnet mask. It is used in access control lists (ACLs) and routing protocols (such as OSPF and EIGRP) to match IP ranges. Instead of defining the network and host portions, a wildcard mask specifies which bits should be ignored (1s) and which should be matched (0s).
+
+#### How to calculate Wildcard Mask
+
+Wildcard Mask = 255.255.255.255 - Subnet Mask
