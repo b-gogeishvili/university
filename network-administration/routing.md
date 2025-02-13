@@ -23,5 +23,3 @@ EIGRP-ის დროს ვუთითებთ მეზობელ ქს�
 - router eigrp 20
 - network {network_ip} {wildcard_mask}
 ```
-
-# OSPF
