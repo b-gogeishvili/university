@@ -232,7 +232,7 @@ int main() {
 ## Abstract
 
 An abstract class in C++ is a class that cannot be instantiated 
-(you cannot create objects of it directly). It’s meant to serve as a base class — a blueprint for other classes.
+(you cannot create objects of it directly). It’s meant to serve as a base class (a blueprint for other classes).
 
 Abstract class is created by declaring at least one pure virtual function:
 
