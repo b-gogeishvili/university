@@ -1,6 +1,6 @@
-# 🧠 Racket Cheatsheet
+# Racket Cheatsheet
 
-## 🧾 Basic Syntax
+## Basic Syntax
 
 - `;` for comments
 - `#lang racket` defines the language
@@ -11,7 +11,7 @@
 
 ---
 
-## 🔢 Data Types
+## Data Types
 
 - **Numbers**: `1`, `3.14`, `-2`
 - **Strings**: `"hello"`
@@ -22,14 +22,14 @@
 
 ---
 
-## 🔁 Conditionals
+## Conditionals
 
 - `(if condition then-expr else-expr)`
 - `(cond [(= x 0) "zero"] [(< x 0) "negative"] [else "positive"])`
 
 ---
 
-## 🔄 Loops and Recursion
+## Loops and Recursion
 
 - Recursion:
   - `(define (countdown n) (when (> n 0) (displayln n) (countdown (- n 1))))`
@@ -39,7 +39,7 @@
 
 ---
 
-## 🧮 Math Functions
+## Math Functions
 
 - `(+ a b)`
 - `(- a b)`
@@ -51,7 +51,7 @@
 
 ---
 
-## 📦 List Operations
+## List Operations
 
 - `(define lst '(1 2 3))`
 - `(first lst)` → `1`
@@ -65,7 +65,7 @@
 
 ---
 
-## 🎯 Functions
+## Functions
 
 - `(define (add a b) (+ a b))`
 - `(lambda (x) (* x x))` defines an anonymous function
@@ -73,21 +73,7 @@
 
 ---
 
-## 🧰 Modules
-
-- `(module mymod racket (provide square) (define (square x) (* x x)))`
-
----
-
-## 🧪 Testing
-
-- `(require rackunit)`
-- `(check-equal? (square 2) 4)`
-- `(check-true #t)`
-
----
-
-## 📘 Useful Libraries
+## Useful Libraries
 
 - `(require racket/list)`
 - `(require racket/function)`
@@ -95,22 +81,7 @@
 
 ---
 
-## 🧩 Pattern Matching
-
-- `(require racket/match)`
-- `(match '(1 2 3) [(list a b c) (+ a b c)])` → `6`
-
----
-
-## 📤 Input/Output
-
-- `(display "Enter name: ")`
-- `(define name (read-line))`
-- `(printf "Hello, ~a!\n" name)`
-
----
-
-## ✅ Boolean Logic
+## Boolean Logic
 
 - `(and #t #t)` → `#t`
 - `(or #f #t)` → `#t`
@@ -119,7 +90,7 @@
 
 ---
 
-## 🎓 Tips
+## Tips
 
 - Racket uses **prefix notation**: `(+ 1 2)` instead of `1 + 2`
 - Everything is an **expression**
