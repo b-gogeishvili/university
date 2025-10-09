@@ -10,7 +10,7 @@ int* p = &arr[0]; // Holds the address of the first element of arr
 ```
 In essence, arr[0] and *p point to the same value. This is why arrays start with 0.
 
-![arrays](./assets/arrays.png)
+![arrays](../assets/arrays.png)
 
 Writing [n] is just a syntactic sugar, which is the same as *(p + n).
 

@@ -2,7 +2,7 @@
 
 The binary system is a way of representing data using 0s and 1s. This system is used by computers to represent all the data it works with. 
 
-![bytes](./assets/binary.png)
+![bytes](../assets/binary.png)
 
 ### Negative numbers
 
@@ -34,7 +34,7 @@ That is how one would write -28 in 8 bit binary.
 
 Bitwise Operators are similar to traditional Logical Operators in that they take two or more values and compare them to each other. The difference ultimately lies In what aspect of the value each operator type is comparing.
 
-![repr](./assets/bitwise.png)
+![repr](../assets/bitwise.png)
 
 - ***AND (&)*** which looks at whether or not both bits in a similar position are 1, or “true”.
 - ***OR (|)*** returns true if either bit is 1.
