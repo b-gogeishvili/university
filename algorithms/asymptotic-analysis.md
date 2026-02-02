@@ -43,6 +43,7 @@ if there exist positive constants `c₁` and `n₀` such that:
 `0 ≤ c⋅g(n) ≤ f(n) for all n≥n₀`
 
 ## Time Complexities From Best To Worst
+```
 O(1)
 O(log n)
 O(√n)
@@ -52,4 +53,4 @@ O(n²)
 O(n³)
 O(2ⁿ)
 O(n!)
-
+```
