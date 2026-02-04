@@ -18,7 +18,8 @@ than the root value, we go to the left side of the tree. If it is greater than
 the root value, we go to the right side of the tree, and so on.
 
 BST is a data structure, which can do following operations in O(h) time,
-where h is a height of a tree:
+where h is a height of a tree. This means O(log(n)):
+```
 search;
 insertion; 
 deletion; 
@@ -26,6 +27,7 @@ find minimum;
 find maximum; 
 find next element; 
 find last element; 
+```
 
 ### BST Insert
 
