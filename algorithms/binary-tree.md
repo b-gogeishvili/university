@@ -19,13 +19,13 @@ the root value, we go to the right side of the tree, and so on.
 
 BST is a data structure, which can do following operations in O(h) time,
 where h is a height of a tree:
-search; 
-insertion;
-deletion;
-find minimum;
-find maximum;
-find next element;
-find last element;
+search;
+insertion; 
+deletion; 
+find minimum; 
+find maximum; 
+find next element; 
+find last element; 
 
 ### BST Insert
 
