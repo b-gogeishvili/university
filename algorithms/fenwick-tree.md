@@ -35,3 +35,4 @@ Comlplexity of updating an element is O(log(n)) as well.
 Even though query and update is log(n) time, delete and insertion are more
 expensive. Main purpose of a fenwick tree is to compute range operations and
 update in log(n) time.
+
